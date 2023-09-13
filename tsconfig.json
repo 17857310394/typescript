@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "allowJs": true,
+      "module": "commonjs",
+      "target": "es5",
+      "lib": [
+          "dom",
+          "es5",
+          "es2015.collection",
+          "es2015.iterable"
+      ],
+      "outDir": "dist",
+      "sourceMap": true,
+    },
+    "include": [
+      "script/**/*.ts", //script文件夹及其子文件夹下的所有ts文件都会被编译
+    ]
+}
