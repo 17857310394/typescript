@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var tool_1 = require("../tools/tool");
 function getGreatestCommonDivisor(a, b) {
     var min = a;
     var max = b;
@@ -29,11 +32,7 @@ function getGreatestCommonDivisor3(a, b) {
     }
     return 0;
 }
-var start = performance.now();
-var a = getGreatestCommonDivisor(15021, 3);
-var end = performance.now();
-console.log("\u51FD\u6570\u6267\u884C\u65F6\u95F4\u4E3A\uFF1A" + (end - start) + "\u6BEB\u79D2");
 // console.time("getGreatestCommonDivisor3");
-// getGreatestCommonDivisor3(24,36);
+tool_1.testFunctionTime(getGreatestCommonDivisor3, 24, 36);
 // console.timeEnd("getGreatestCommonDivisor3");
 //# sourceMappingURL=app.js.map

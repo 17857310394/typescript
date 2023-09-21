@@ -1,3 +1,5 @@
+import { testFunctionTime } from "../tools/tool";
+
 function getGreatestCommonDivisor(a:number,b:number):number{
     var min:number=a;
     var max:number=b;
@@ -34,10 +36,6 @@ function getGreatestCommonDivisor3(a:number,b:number):number{
     return 0;
 }
 
-const start = performance.now();
-const a=getGreatestCommonDivisor(15021,3);
-const end = performance.now();
-console.log(`函数执行时间为：${end-start}毫秒`);
 // console.time("getGreatestCommonDivisor3");
-// getGreatestCommonDivisor3(24,36);
+testFunctionTime(getGreatestCommonDivisor3,24,36);
 // console.timeEnd("getGreatestCommonDivisor3");
